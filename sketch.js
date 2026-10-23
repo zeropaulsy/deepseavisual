@@ -24,7 +24,7 @@ var filterSkeletons;
 let png_playButton, png_missingTexture;
 
 let SONGS, SELECTED_SONG, SONG_START;
-let SMONK_7, PATIENCE, SOME_GIRLS;
+let SMONK_7;
 
 let analyser, spectrum, rms, fft;
 
@@ -61,9 +61,7 @@ function preload() {
 
 	// Load audio and select song
 	SMONK_7        = loadAsset('audio', 'assets/sound/SMONK 7.mp3');
-	PATIENCE       = loadAsset('audio', 'assets/sound/PATIENCE.mp3');
-	SOME_GIRLS     = loadAsset('audio', 'assets/sound/SOME GIRLS [SUPERSONIC SUBMISSION].mp3');
-	SONGS          = new Array(SMONK_7, PATIENCE, SOME_GIRLS);
+	SONGS          = new Array(SMONK_7);
 	SELECTED_SONG  = SONGS.indexOf(SMONK_7);
 	SONG_START     = 27;
 }
